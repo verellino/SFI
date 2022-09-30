@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[data-collapsible="true"].bg-white + [data-collapsible="true"].bg-white,
+[data-collapsible="true"].bg-slate-100
+  + [data-collapsible="true"].bg-slate-100 {
+  @apply pt-0 md:pt-0;
+}
+
+h1 {
+  @apply tracking-tight text-5xl md:text-5xl mb-6 last:mb-0 font-serif text-turquoise;
+}
+h2 {
+  @apply tracking-tight text-2xl md:text-4xl mb-4 last:mb-0 font-serif text-turquoise;
+}
+h3 {
+  @apply tracking-tight text-2xl mb-2 last:mb-0 font-serif text-turquoise;
+}
