@@ -1,7 +1,7 @@
 <template>
   <section class="section">
     <PrismicRichText :field="slice.primary.title" class="title" />
-    <div class="grid grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
       <div v-for="(item, i) in slice.items" :key="`slice-item-${i}`" class="max-w-sm bg-white rounded-lg border border-gray-400 shadow-md col-span-1">
         <PrismicImage :field="item.image" class="rounded-t-lg" />
         <div class="p-5">

@@ -5,7 +5,7 @@
     class="px-6"
     :class="{
       'py-4 md:py-8': yPadding === 'sm',
-      'py-18 md:py-24': yPadding === 'base',
+      'py-16 md:py-24': yPadding === 'base',
     }"
   >
     <div class="mx-auto w-full max-w-6xl">

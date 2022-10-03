@@ -1,5 +1,5 @@
 <template>
-  <Bounded as="section" :collapsible="false" class="bg-light-blue">
+  <Bounded as="section" :collapsible="false" y-padding="base" class="bg-light-blue">
     <div class="grid grid-cols-1 justify-items-center gap-10">
       <PrismicRichText
         v-if="$prismic.asText(slice.primary.text)"
@@ -30,10 +30,10 @@ export default {
     htmlSerializer (type, element, content, children) {
       switch (type) {
         case 'heading1':
-          return /* html */ `<h1 class="text-5xl md:text-5xl mb-6 last:mb-0">${children.join('')}</h1>`
+          return /* html */ `<h1 class="sm:text-5xl mb-6 last:mb-0">${children.join('')}</h1>`
 
         case 'paragraph':
-          return /* html */ `<p class="mb-6 last:mb-0">${children.join('')}</p>`
+          return /* html */ `<p class="text-left sm:text-center mb-6 last:mb-0">${children.join('')}</p>`
 
         default:
           return this.$prismic?.htmlSerializer(type, element, content, children) ?? null
