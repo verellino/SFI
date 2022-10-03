@@ -1,0 +1,23 @@
+{
+  "id": "mock-doc-id",
+  "url": null,
+  "type": "partners",
+  "href": null,
+  "tags": [],
+  "first_publication_date": "1970-01-01T00:00:01+0000",
+  "last_publication_date": "1970-01-01T00:00:01+0000",
+  "slugs": [],
+  "linked_documents": [],
+  "lang": "en-us",
+  "alternate_languages": [],
+  "data": {
+    "title": [
+      {
+        "type": "paragraph",
+        "text": "Nisi est eu ex est dolor occaecat. Exercitation laboris elit nisi in sint nisi sunt consequat officia adipisicing cillum deserunt quis consectetur proident.",
+        "spans": []
+      }
+    ],
+    "slices": []
+  }
+}

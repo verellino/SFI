@@ -9,8 +9,8 @@
         />
         <PrismicRichText :field="settings.data.siteTitle" class="hidden sm:block font-serif text-lg ml-4" />
       </NuxtLink>
-      <nav class="w-full">
-        <ul class="block w-full sm:flex flex-wrap gap-6 md:gap-10" :class="menuOpen ? 'block' : 'hidden'">
+      <nav>
+        <ul class="navbar block sm:flex gap-6 md:gap-10" :class="menuOpen ? 'block' : 'hidden'">
           <li
             v-for="item in navigation.data.links"
             :key="$prismic.asText(item.label)"
@@ -76,3 +76,11 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+@media (max-width:768px) { 
+    .navbar {
+      width: 87vw;
+  }
+}
+</style>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <SliceZone :slices="page.data.slices" :components="components" />
-    <Partners />
+    <Partners :partners="partners"/>
   </div>
 </template>
 
@@ -12,9 +12,11 @@ export default {
   async asyncData ({ $prismic, store, i18n }) {
     const lang = i18n.locale
     const page = await $prismic.api.getByUID('page', 'home', { lang })
+    const partners = await $prismic.api.getByUID('partners', 'partners')
     await store.dispatch('prismic/load', { lang, page })
     return {
-      page
+      page,
+      partners
     }
   },
   data () {

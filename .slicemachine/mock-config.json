@@ -45,7 +45,8 @@
           "blocks": 1
         }
       }
-    }
+    },
+    "partners": {}
   },
   "slices": {
     "Text": {
@@ -133,6 +134,11 @@
       }
     },
     "Team": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "PartnerLogos": {
       "default": {
         "primary": {}
       }

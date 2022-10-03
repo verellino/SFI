@@ -3,6 +3,7 @@
 import ContactForm from './ContactForm';
 import Hero from './Hero';
 import Image from './Image';
+import PartnerLogos from './PartnerLogos';
 import Team from './Team';
 import TextWithFeatures from './TextWithFeatures';
 import TextWithImage from './TextWithImage';
@@ -11,6 +12,7 @@ export {
 	ContactForm,
 	Hero,
 	Image,
+	PartnerLogos,
 	Team,
 	TextWithFeatures,
 	TextWithImage,
@@ -20,6 +22,7 @@ export const components = {
 	contact_form: ContactForm,
 	hero: Hero,
 	image: Image,
+	partner_logos: PartnerLogos,
 	team: Team,
 	text_with_features: TextWithFeatures,
 	text_with_image: TextWithImage,
